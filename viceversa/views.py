@@ -5,6 +5,7 @@ def home(request):
 
 def reverse(request):
 	user_text = request.GET['usertext']
+	print(user_text)
 	words = user_text.split()
 	number_of_words = len(words)
 	reversed_text = user_text[::-1]
